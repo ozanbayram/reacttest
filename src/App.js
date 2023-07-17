@@ -5,7 +5,7 @@ function App() {
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
-    fetch('http://49.13.59.125:5000/api/time').then(res => res.json()).then(data => {
+    fetch('https://api.starkrekt.com/api/time').then(res => res.json()).then(data => {
       setCurrentTime(data.time);
     });
   }, []);
